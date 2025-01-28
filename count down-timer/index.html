@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        /* Center the content on the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .timer-container {
+            border: 2px solid #000;
+            padding: 20px;
+            display: inline-block;
+        }
+
+        #countdown {
+            font-size: 2em;
+            margin: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1em;
+            padding: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer-container">
+        <h1>Countdown Timer</h1>
+        <div>
+            Set Target Time (HH:MM:SS):
+            <input type="text" id="target-time" value="00:00:00" placeholder="HH:MM:SS">
+        </div>
+        <div id="countdown">00:00:00</div>
+        <div>
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
