@@ -1,0 +1,17 @@
+Easy
+-- store the task in local storage
+-- Ability to add new boards dynamically
+-- Ability to add new tasks in any board
+-- Responsive Design
+-- Ability to change title in custom boards
+-- Ability to delete custom boards
+-- Ability to change or update task
+-- Delete task
+-- Custom coloring to board
+
+Medium
+-- card ordering
+-- Count of task in every board heading
+
+Hard
+-- Draggable boards
