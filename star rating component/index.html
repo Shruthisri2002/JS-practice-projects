@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating</title>
+    <style>
+        /* Centering the container with a solid border */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        .rating-container {
+            border: 2px solid #333;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .star {
+            font-size: 50px;
+            cursor: pointer;
+            color: #ccc;
+        }
+
+        .yellow {
+            color: gold;
+        }
+
+        .rating-value {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .reset-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .reset-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="rating-container">
+        <div id="star-rating-container">
+            <span class="star" data-index="1">★</span>
+            <span class="star" data-index="2">★</span>
+            <span class="star" data-index="3">★</span>
+            <span class="star" data-index="4">★</span>
+            <span class="star" data-index="5">★</span>
+        </div>
+        <div class="rating-value" id="rating-value">Rating count: 0</div>
+        <button class="reset-btn" id="reset-btn">Reset Rating</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
